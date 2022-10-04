@@ -36,7 +36,7 @@ and the allowed domains:
 
 1. From the root folder: **npm install**
 2. Edit file ```.env``` and update: ```PUBLIC_HOSTNAME=profilebotrest.azurewebsites.net``` with your web hosted bot's url. (You should be able to navigate to this url in a browser to start a bot session.)
-3. Edit ```manifest.json```update the **contentUrl:** and **validDomains:** properties. Note: validDomains should have the list of all domains the web page may need access. In the case of the sample, ```login.microsoftonline.com``` is needed in case the user has not yet logged in.
+3. Edit ```.\src\manifest\manifest.json```update the **contentUrl:** and **validDomains:** properties. Note: validDomains should have the list of all domains the web page may need access. In the case of the sample, ```login.microsoftonline.com``` is needed in case the user has not yet logged in.
 5. Build the package: **gulp manifest**. This creates a zip file in the ```package``` folder.
 6. Upload the package to Teams. See instructions [here](https://learn.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/create-personal-tab?pivots=node-java-script#upload-your-application-to-teams).
 
