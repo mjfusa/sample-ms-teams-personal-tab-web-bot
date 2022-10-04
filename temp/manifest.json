@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.9",
+  "id": "1d27aa10-4365-11ed-8860-9d3c1d56b12c",
+  "version": "1.0.1",
+  "packageName": "myprofiletab",
+  "developer": {
+    "name": "Mike Francis",
+    "websiteUrl": "https://profilebotrest.azurewebsites.net",
+    "privacyUrl": "https://profilebotrest.azurewebsites.net/privacy.html",
+    "termsOfUseUrl": "https://profilebotrest.azurewebsites.net/tou.html"
+  },
+  "name": {
+    "short": "MyProfileTab",
+    "full": "MyProfileTab"
+  },
+  "description": {
+    "short": "This tab demonstrates a web based, SSO gated bot hosted in a personal tab",
+    "full": "This tab demonstrates a web based, SSO gated bot hosted in a personal tab for Microsoft Teams."
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "299b9872-74f2-42f8-aba3-450fc8c7ba21",
+      "name": "My Profile Bot",
+      "contentUrl": "https://profilebotrest.azurewebsites.net?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "profilebotrest.azurewebsites.net",
+    "login.microsoftonline.com"
+  ],
+  "showLoadingIndicator": false
+}

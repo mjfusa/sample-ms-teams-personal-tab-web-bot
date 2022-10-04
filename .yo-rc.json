@@ -1,0 +1,9 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "Mike Francis"
+    },
+    "libraryName": "myProfileTab",
+    "generator-version": "3.5.0"
+  }
+}
